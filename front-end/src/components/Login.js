@@ -18,7 +18,7 @@ const Login=()=>{
     const login= async ()=>{
         console.warn(email,password);
 
-        let result = await fetch ("http://localhost:5000/login",{
+        let result = await fetch ("https://edashboard-tdbs.onrender.com/login",{
             method:'Post',
             body:JSON.stringify({email,password}),
             headers:{
