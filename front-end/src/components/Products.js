@@ -14,7 +14,7 @@ const Products=()=>{
 
     const getProducts=async ()=>{
 
-        let result = await fetch('http://localhost:5000/products');
+        let result = await fetch('https://edashboard-tdbs.onrender.com/products');
         result = await result.json();
         setProducts(result);
     
@@ -23,7 +23,7 @@ const Products=()=>{
 
     const deleteproduct=async (id)=>{
      
-     let result = await fetch(`http://localhost:5000/product/${id}`,{
+     let result = await fetch(`https://edashboard-tdbs.onrender.com/product/${id}`,{
         method:'delete'
      }) 
      result = await result.json();
@@ -40,7 +40,7 @@ const Products=()=>{
 
         let key = event.target.value;
         if(key){
-            let result = await fetch(`http://localhost:5000/search/${key}`);
+            let result = await fetch(`https://edashboard-tdbs.onrender.com/search/${key}`);
             result = await result.json();
             if(result){
                 setProducts(result);
