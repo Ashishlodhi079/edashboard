@@ -39,7 +39,7 @@ const Login=()=>{
     return(
         <div className='Loginform'><h1>Login Form</h1>
             <input type='text' className='Formtext' value={email} onChange={(e)=>setEmail(e.target.value)} placeholder='enter email' />
-            <input type='text' className='Formtext' value={password}  onChange={(e)=>setPassword(e.target.value)} placeholder='enter password' />
+            <input type='password' className='Formtext' value={password}  onChange={(e)=>setPassword(e.target.value)} placeholder='enter password' />
             <button type="button" onClick={login} className="Formbutton">Login</button>
         </div>
     )
