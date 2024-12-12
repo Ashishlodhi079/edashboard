@@ -44,7 +44,7 @@ const Signup=()=>{
 
 <input type="text" className="Formtext" value={email} onChange={(e)=>setEmail(e.target.value)} placeholder="email" />
 
-<input type="text" className="Formtext" value={password}  onChange={(e)=>setPassword(e.target.value)} placeholder="password" />
+<input type="password" className="Formtext" value={password}  onChange={(e)=>setPassword(e.target.value)} placeholder="password" />
 
 <button type="button" onClick={collectData} className="Formbutton">Sign Up</button>
         </div>
