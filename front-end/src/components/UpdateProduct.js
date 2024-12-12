@@ -33,7 +33,7 @@ const getproductdata= async ()=>{
 
 const updateProduct=async ()=>{
 
-    let result = await fetch(`http://localhost:5000/product/${params.id}`,
+    let result = await fetch(`https://edashboard-tdbs.onrender.com/product/${params.id}`,
         {
             method:'PUT',
             body:JSON.stringify({name,price,category,brand}),
