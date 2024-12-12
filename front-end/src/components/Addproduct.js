@@ -28,7 +28,7 @@ const Addproduct=()=>{
 
        // console.warn(userid);
           
-        let result = await fetch('http://localhost:5000/add-product',{
+        let result = await fetch('https://edashboard-tdbs.onrender.com/add-product',{
             method:'post',
             body:JSON.stringify({name,price,category,brand,userid}),
             headers:{
